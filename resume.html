@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Raj - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background: white;
+            max-width: 8.27in;
+            margin: 0 auto;
+            padding: 0.4in;
+            font-size: 11px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 12px;
+        }
+        
+        .name {
+            font-size: 2em;
+            font-weight: bold;
+            color: #2c3e50;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 10px;
+            font-size: 0.85em;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+        
+        .profiles {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-size: 0.8em;
+        }
+        
+        .profile-link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .profile-link:hover {
+            text-decoration: underline;
+        }
+        
+        .section {
+            margin-bottom: 18px;
+        }
+        
+        .section-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 10px;
+            border-bottom: 1.5px solid #3498db;
+            padding-bottom: 3px;
+        }
+        
+        .summary {
+            text-align: justify;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        
+        .education-item {
+            margin-bottom: 12px;
+        }
+        
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        
+        .degree {
+            font-weight: bold;
+            font-size: 0.95em;
+            color: #2c3e50;
+        }
+        
+        .date {
+            font-weight: 600;
+            color: #7f8c8d;
+            font-size: 0.85em;
+        }
+        
+        .institution {
+            color: #555;
+            font-style: italic;
+            margin-left: 12px;
+            font-size: 0.9em;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .skill-category {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 0;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .skill-name {
+            font-weight: 500;
+            font-size: 0.9em;
+        }
+        
+        .skill-level {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 0.8em;
+        }
+        
+        .project {
+            margin-bottom: 15px;
+            padding: 12px;
+            border-left: 3px solid #3498db;
+            background: #f8f9fa;
+        }
+        
+        .project-title {
+            font-size: 1em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 6px;
+        }
+        
+        .project-description {
+            margin-bottom: 8px;
+            text-align: justify;
+            line-height: 1.4;
+            font-size: 0.9em;
+        }
+        
+        .project-details {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .project-details li {
+            margin-bottom: 4px;
+            padding-left: 12px;
+            position: relative;
+            font-size: 0.85em;
+            line-height: 1.3;
+        }
+        
+        .project-details li:before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .deployment-link {
+            color: #27ae60;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        
+        .deployment-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media print {
+            body {
+                padding: 0.3in;
+                font-size: 10px;
+            }
+            
+            .name {
+                font-size: 1.8em;
+            }
+            
+            .section-title {
+                font-size: 1em;
+            }
+            
+            .project {
+                break-inside: avoid;
+                margin-bottom: 12px;
+                padding: 10px;
+            }
+            
+            .section {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="name">SHUBHAM RAJ</h1>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span>📞</span> 6202984644
+            </div>
+            <div class="contact-item">
+                <span>✉️</span> shubham15986@gmail.com
+            </div>
+            <div class="contact-item">
+                <span>📍</span> Bhagalpur, Bihar, 813105 (IN)
+            </div>
+        </div>
+        <div class="profiles">
+            <a href="https://github.com/Shubham15986" class="profile-link" target="_blank">GitHub: Shubham15986</a>
+            <a href="https://codeforces.com/profile/Shubham15986" class="profile-link" target="_blank">Codeforces: Shubham15986</a>
+            <a href="https://www.codechef.com/users/Shubham15986" class="profile-link" target="_blank">CodeChef: Shubham15986</a>
+            <a href="https://leetcode.com/Shubham15986" class="profile-link" target="_blank">LeetCode: Shubham15986</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Professional Summary</h2>
+        <p class="summary">
+            First-year undergraduate with a strong interest in programming, problem-solving, and technology. Actively participating in competitive programming, with 500+ problems solved across platforms like CodeChef (2 star) and Codeforces (Pupil). Committed to learning core computer science concepts, including data structures, algorithms, and web development. A fast learner with a growth mindset, currently building foundational skills to contribute to real-world software projects in the future.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+            <div class="education-header">
+                <span class="degree">B.Tech in Biotechnology</span>
+                <span class="date">2024 - 2028</span>
+            </div>
+            <div class="institution">National Institute of Technology, Durgapur, West Bengal</div>
+        </div>
+        <div class="education-item">
+            <div class="education-header">
+                <span class="degree">High School Diploma</span>
+                <span class="date">Mar. 2022</span>
+            </div>
+            <div class="institution">Chauhan Public School, Bhagalpur, Bihar</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div>
+                <div class="skill-category">
+                    <span class="skill-name">Competitive Programming</span>
+                    <span class="skill-level">Experienced</span>
+                </div>
+                <div class="skill-category">
+                    <span class="skill-name">HTML, CSS, JavaScript</span>
+                    <span class="skill-level">Skillful</span>
+                </div>
+                <div class="skill-category">
+                    <span class="skill-name">Cybersecurity</span>
+                    <span class="skill-level">Skillful</span>
+                </div>
+            </div>
+            <div>
+                <div class="skill-category">
+                    <span class="skill-name">C and C++</span>
+                    <span class="skill-level">Experienced</span>
+                </div>
+                <div class="skill-category">
+                    <span class="skill-name">React and Tailwind</span>
+                    <span class="skill-level">Skillful</span>
+                </div>
+                <div class="skill-category">
+                    <span class="skill-name">Node and Express</span>
+                    <span class="skill-level">Skillful</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Projects</h2>
+        
+        <div class="project">
+            <div class="project-title">Drug Discovery ADMET Predictor</div>
+            <div class="project-description">
+                Full-stack bioinformatics app for AI-powered ADMET (Absorption, Distribution, Metabolism, Excretion, Toxicity) prediction from SMILES input.
+            </div>
+            <ul class="project-details">
+                <li>Users draw or paste <strong>SMILES</strong> strings; backend uses ML models to predict properties like solubility, permeability, and mutagenicity in real time.</li>
+                <li>Built with JavaScript, Node.js, Express, Mongoose, and integrated ML pipeline.</li>
+                <li>AI <strong>assistance</strong> (ChatGPT + documentation tools) was used throughout development for model integration and backend logic.</li>
+                <li>Deployed on Render: <a href="#" class="deployment-link">admet-5.onrender.com</a></li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="project-title">MoodLit: AI Mood-Based Book Recommender</div>
+            <div class="project-description">
+                Interactive React app recommending books based on the user's mood using AI sentiment detection.
+            </div>
+            <ul class="project-details">
+                <li>Users input or select mood, which is analyzed using emotion-detection logic; matched books are fetched via Open Library API.</li>
+                <li>Built with React, Node.js, Express; features real-time interaction and mood-based suggestions.</li>
+                <li>Took assistance from AI tools (e.g., ChatGPT) for frontend logic, mood mapping, and API integration.</li>
+                <li>Deployed on Vercel: <a href="https://v0-moodlit1-blmw5o.vercel.app/" class="deployment-link" target="_blank">v0-moodlit1-blmw5o.vercel.app</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Achievements</h2>
+        
+        <div class="project">
+            <div class="project-title">Hackathon - 1st Runner Up</div>
+            <div class="project-description">
+                Secured 1st Runner Up position in competitive hackathon organized by college club with 100+ participants.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add print functionality
+        window.addEventListener('load', function() {
+            // Add a print button for convenience
+            const printBtn = document.createElement('button');
+            printBtn.textContent = 'Print/Save as PDF';
+            printBtn.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                padding: 10px 20px;
+                background: #3498db;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: bold;
+                z-index: 1000;
+            `;
+            printBtn.onclick = () => window.print();
+            document.body.appendChild(printBtn);
+            
+            // Hide print button when printing
+            window.addEventListener('beforeprint', function() {
+                printBtn.style.display = 'none';
+            });
+            
+            window.addEventListener('afterprint', function() {
+                printBtn.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
